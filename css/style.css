@@ -1,0 +1,292 @@
+body{
+margin: 0;
+padding: 0;
+background-image: url('..//bg.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+overflow-x: hidden;
+}
+
+/* Main Container */
+.circlesContainer.expand{
+animation: expand 3s linear forwards;
+}
+
+.circlesContainer.shrink{
+animation: shrink 3s linear forwards;
+}
+
+/* Wrapper Circle */
+.wrapperCircle{
+background: conic-gradient(
+#55b7a4 0%,
+#4ca493 40%,
+#fff 40%,
+#fff 60%,
+#336d62 60%,
+#2a5b52 100%
+);
+width: 250px;
+height: 250px;
+margin-left: 39%;
+margin-top: 12%;
+border-radius: 50%;
+padding-top: 8px;
+}
+
+
+/* Big Circle */
+.mainCircle{
+  width: 233.5px;
+  height: 233.5px;
+  border-radius: 50%;
+  background: rgb(18, 18, 18);
+  margin-left: 8.5px;
+}
+
+/* P with commands */
+.mainCircle p{
+color: white;
+padding-top: 43%;
+font-size: 1.3rem;
+}
+
+/* Circle That Moves Around */
+.smallWrapper{
+display: inline-block;
+height: 155px;
+position: relative;
+bottom: 277px;
+animation: rotate 7.5s linear forwards infinite;
+transform-origin: bottom center;
+}
+
+.smallCircle{
+height: 22px;
+width: 22px;
+background: #fff;
+border-radius: 50%;
+}
+
+/* CSS Animations */
+/* Rotate Small Circle */
+@keyframes rotate {
+from{
+  transform: rotate(0deg);
+}
+
+to{
+ transform: rotate(360deg);
+}
+
+}
+
+/* Expand Container on Breath In */
+@keyframes expand {
+from{
+  transform: scale(1);
+}
+
+to{
+ transform: scale(1.2);
+}
+
+}
+
+/* Shrink Container on Breath Out */
+@keyframes shrink {
+from{
+  transform: scale(1.2);
+}
+
+to{
+ transform: scale(1);
+}
+
+}
+
+
+
+/* Media Queries */
+
+/* Phones */
+@media (max-width: 690px) {
+
+  body{
+  height: 100vh;
+  }
+
+.wrapperCircle{
+  margin-left: 18%;
+  margin-top: 28%;
+  width: 210px;
+  height: 210px;
+}
+
+.mainCircle{
+  width: 195px;
+  height: 195px;
+}
+
+/* Circle That Moves Around */
+.smallWrapper{
+display: inline-block;
+height: 135px;
+position: relative;
+bottom: 230px;
+animation: rotate 7.5s linear forwards infinite;
+transform-origin: bottom center;
+}
+
+.smallCircle{
+height: 17px;
+width: 17px;
+background: #fff;
+border-radius: 50%;
+}
+
+/* CSS Animations */
+/* Expand Container on Breath In */
+@keyframes expand {
+from{
+  transform: scale(1);
+}
+
+to{
+ transform: scale(1.1);
+}
+
+}
+
+/* Shrink Container on Breath Out */
+@keyframes shrink {
+from{
+  transform: scale(1.1);
+}
+
+to{
+ transform: scale(1);
+}
+
+}
+
+}
+
+/* Ipad */
+@media only screen and (max-width: 800px) and (min-width: 700px) {
+body{
+height: 100vh;
+}
+
+.relaxation{
+font-size: 4rem;
+}
+
+.wrapperCircle{
+  margin-left: 28%;
+  margin-top: 30%;
+  width: 300px;
+  height: 300px;
+}
+
+.mainCircle{
+  width: 278px;
+  height: 278px;
+  margin-left: 11px;
+  margin-top: 4px;
+}
+
+.mainCircle p{
+font-size: 1.8rem;
+}
+
+.smallWrapper{
+display: inline-block;
+height: 180px;
+position: relative;
+bottom: 320px;
+animation: rotate 7.5s linear forwards infinite;
+transform-origin: bottom center;
+}
+
+.smallCircle{
+height: 22px;
+width: 22px;
+background: #fff;
+border-radius: 50%;
+}
+}
+
+/* Ipad Pro */
+@media only screen and (max-width: 1100px) and (min-width: 1000px) {
+  body{
+  height: 100vh;
+  }
+
+  .relaxation{
+  font-size: 5rem;
+  }
+
+  .wrapperCircle{
+    margin-left: 28%;
+    margin-top: 30%;
+    width: 400px;
+    height: 400px;
+  }
+
+  .mainCircle{
+    width: 375px;
+    height: 375px;
+    margin-left: 13px;
+    margin-top: 4px;
+  }
+
+  .mainCircle p{
+  font-size: 2.5rem;
+  }
+
+  /* Circle That Moves Around */
+  .smallWrapper{
+  display: inline-block;
+  height: 235px;
+  position: relative;
+  bottom: 420px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+  }
+
+  .smallCircle{
+  height: 27px;
+  width: 27px;
+  background: #fff;
+  border-radius: 50%;
+  }
+
+  /* CSS Animations */
+  /* Expand Container on Breath In */
+  @keyframes expand {
+  from{
+    transform: scale(1);
+  }
+
+  to{
+   transform: scale(1.2);
+  }
+
+  }
+
+  /* Shrink Container on Breath Out */
+  @keyframes shrink {
+  from{
+    transform: scale(1.2);
+  }
+
+  to{
+   transform: scale(1);
+  }
+
+  }
+
+  }
+
+}
